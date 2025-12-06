@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravindra Kumar Nayak | Data Analyst & Developer</title>
+    <meta name="description"
+        content="Portfolio of Ravindra Kumar Nayak - BS in Mathematics & Computing, IIT Patna. Data Analysis, Python, SQL, Power BI.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for Dev/No-Build) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['Space Grotesk', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                            950: '#042f2e',
+                        },
+                        dark: {
+                            bg: '#0a0a0a',
+                            card: '#121212',
+                            border: '#1f1f1f'
+                        }
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'hero-glow': 'conic-gradient(from 180deg at 50% 50%, #2dd4bf 0deg, #0a0a0a 180deg, #2dd4bf 360deg)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body
+    class="bg-dark-bg text-gray-300 font-sans antialiased overflow-x-hidden selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-bg/80 backdrop-blur-md border-b border-white/5 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 cursor-pointer group">
+                    <span
+                        class="text-2xl font-bold font-mono tracking-tighter text-white group-hover:text-brand-400 transition-colors">
+                        rvn<span class="text-brand-500">.dev</span>
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="nav-link text-sm font-medium hover:text-brand-400 transition-colors text-white">Home</a>
+                        <a href="#about"
+                            class="nav-link text-sm font-medium hover:text-brand-400 transition-colors text-gray-400">About</a>
+                        <a href="#skills"
+                            class="nav-link text-sm font-medium hover:text-brand-400 transition-colors text-gray-400">Skills</a>
+                        <a href="#projects"
+                            class="nav-link text-sm font-medium hover:text-brand-400 transition-colors text-gray-400">Projects</a>
+                        <a href="#contact"
+                            class="nav-link border border-brand-500/50 text-brand-400 px-4 py-2 rounded-full hover:bg-brand-500/10 transition-all">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-white/10 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/20 rounded-full blur-[128px] animate-pulse-slow">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[128px] animate-pulse-slow delay-1000">
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="hero-content space-y-6">
+                <div
+                    class="inline-block px-4 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 backdrop-blur-sm mb-4">
+                    <span class="text-brand-300 font-mono text-xs tracking-widest uppercase">Available for Hire</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4">
+                    Hi, I'm <span class="glitch" data-text="Ravindra Nayak">Ravindra Nayak</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-light">
+                    Transforming data into <span class="text-white font-medium">actionable insights</span>.
+                    <br class="hidden md:block" />
+                    BS in Mathematics & Computing @ <span class="text-brand-400">IIT Patna</span>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+                    <a href="#projects"
+                        class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-brand-600 text-white font-semibold hover:bg-brand-500 hover:scale-105 transition-all shadow-lg shadow-brand-500/25 flex items-center justify-center gap-2">
+                        View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#contact"
+                        class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-white/10 bg-white/5 text-white font-semibold hover:bg-white/10 hover:scale-105 transition-all flex items-center justify-center gap-2">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Social Proof/Stats or Icons -->
+                <div class="mt-12 flex justify-center gap-6 text-gray-500">
+                    <a href="#" class="hover:text-brand-400 transition-colors"><i data-lucide="github"
+                            class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-brand-400 transition-colors"><i data-lucide="linkedin"
+                            class="w-6 h-6"></i></a>
+                    <a href="#" class="hover:text-brand-400 transition-colors"><i data-lucide="mail"
+                            class="w-6 h-6"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-gray-500 hover:text-white transition-colors">
+                <i data-lucide="chevron-down" class="w-6 h-6"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About / Education Section -->
+    <section id="about" class="py-24 relative bg-dark-card/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8 education-col">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 section-title">Education</h2>
+
+                    <div class="relative pl-8 border-l border-white/10 space-y-12">
+                        <!-- IIT Patna -->
+                        <div class="relative edu-item">
+                            <div
+                                class="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-dark-bg">
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Indian Institute of Technology, Patna</h3>
+                            <p class="text-brand-400 font-mono text-sm mt-1">Nov 2022 - May 2026</p>
+                            <p class="text-gray-400 mt-2">Bachelor of Science in Mathematics and Computing</p>
+                        </div>
+
+                        <!-- High School -->
+                        <div class="relative edu-item">
+                            <div
+                                class="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-gray-700 ring-4 ring-dark-bg">
+                            </div>
+                            <h3 class="text-xl font-bold text-white">PD Poddar Sr. Sec. School</h3>
+                            <p class="text-brand-400 font-mono text-sm mt-1">Jun 2020 - Mar 2021</p>
+                            <p class="text-gray-400 mt-2">High School, RBSE Board (95.80%)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 experience-col">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 section-title">Leadership &
+                        Extra-Curricular</h2>
+
+                    <div class="space-y-6">
+                        <div
+                            class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-brand-500/30 transition-all card-hover">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white">Mess Secretary</h3>
+                                <span class="bg-brand-500/10 text-brand-300 text-xs px-2 py-1 rounded">Present</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-4">IIT Patna • Sept 2025 - Present</p>
+                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm">
+                                <li>Liaison between students and mess administration.</li>
+                                <li>Collect and analyze student feedback for improvements.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-brand-500/30 transition-all card-hover">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white">Celesta - Techno-Management Fest</h3>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-4">Sub Coordinator • Aug 2023 - May 2024</p>
+                            <p class="text-gray-400 text-sm">Assisted in marketing and publicity activities, managed
+                                social media content, and coordinated public relations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-dark-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 section-title">Technical Arsenal</h2>
+                <p class="text-gray-400">Tools and technologies I use to drive data insights.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Analysis -->
+                <div
+                    class="p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-brand-500/50 transition-all group skill-card">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Programming & Analysis</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Python</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">R</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">SQL</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Pandas</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">NumPy</span>
+                    </div>
+                </div>
+
+                <!-- Visualization -->
+                <div
+                    class="p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-brand-500/50 transition-all group skill-card">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center text-orange-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="pie-chart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Visualization</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Power
+                            BI</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Tableau</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Google
+                            Looker</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Matplotlib</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Tools & DB -->
+                <div
+                    class="p-8 rounded-3xl bg-dark-card border border-white/5 hover:border-brand-500/50 transition-all group skill-card">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Data & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">MySQL</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Excel</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">Google
+                            Colab</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-dark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 section-title">Featured Projects</h2>
+
+            <div class="space-y-24">
+                <!-- Project 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card group">
+                    <div
+                        class="relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 group-hover:border-brand-500/50 transition-all shadow-2xl project-img-container">
+                        <img src="assets/amazon-dashboard.png" alt="Amazon Sales Dashboard"
+                            class="absolute inset-0 w-full h-full object-cover project-img">
+                        <div
+                            class="absolute inset-0 bg-brand-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay">
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="text-brand-400 font-mono text-xs tracking-wider uppercase">Data Analysis</span>
+                            <div class="h-px bg-white/10 flex-grow"></div>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white group-hover:text-brand-400 transition-colors">Amazon
+                            Sales Data Analysis</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Performed end-to-end data analysis on Amazon sales data. Built interactive Power BI
+                            dashboards and automated data preprocessing workflows for outlier detection and trend
+                            analysis.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">Power
+                                BI</span>
+                            <span class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">EDA</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">Pandas</span>
+                        </div>
+                        <a href="https://github.com/itzrv19/Amazon-Sales-Data-Analysis"
+                            class="inline-flex items-center text-brand-400 hover:text-brand-300 font-medium mt-4 group/link">
+                            View Source Code <i data-lucide="arrow-up-right"
+                                class="w-4 h-4 ml-1 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card group md:flex-row-reverse">
+                    <div
+                        class="md:order-2 relative rounded-2xl overflow-hidden aspect-video bg-gradient-to-br from-gray-900 to-gray-800 border border-white/10 group-hover:border-brand-500/50 transition-all shadow-2xl project-img-container">
+                        <img src="assets/vendor-dashboard.png" alt="Vendor Performance Dashboard"
+                            class="absolute inset-0 w-full h-full object-cover project-img">
+                        <div
+                            class="absolute inset-0 bg-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay">
+                        </div>
+                    </div>
+                    <div class="space-y-6 md:order-1">
+                        <div class="flex items-center gap-4">
+                            <span class="text-purple-400 font-mono text-xs tracking-wider uppercase">Business
+                                Intelligence</span>
+                            <div class="h-px bg-white/10 flex-grow"></div>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white group-hover:text-purple-400 transition-colors">Vendor
+                            Performance Analysis</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Optimized data workflows and SQL pipelines, enhancing accuracy and efficiency. Improved cost
+                            performance by 72% and delivered executive-ready dashboards for real-time visibility.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">MySQL</span>
+                            <span class="px-3 py-1 text-xs font-medium text-white bg-white/10 rounded-full">Power
+                                BI</span>
+                        </div>
+                        <a href="https://github.com/itzrv19/Vendor-Performance-Analysis"
+                            class="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium mt-4 group/link">
+                            View Source Code <i data-lucide="arrow-up-right"
+                                class="w-4 h-4 ml-1 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-dark-card/30 relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Let's work together.</h2>
+            <p class="text-xl text-gray-400 mb-12">
+                Currently looking for Job opportunities or Data Analysis projects.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:2201mc30_ravindra@iitp.ac.in"
+                    class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:bg-brand-500/10 hover:border-brand-500/50 transition-all group">
+                    <i data-lucide="mail"
+                        class="w-8 h-8 text-gray-400 group-hover:text-brand-400 mx-auto mb-4 transition-colors"></i>
+                    <h3 class="text-white font-medium">Email</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-brand-500/80 mt-1">Contact Me</p>
+                </a>
+                <a href="tel:+918504929690"
+                    class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:bg-brand-500/10 hover:border-brand-500/50 transition-all group">
+                    <i data-lucide="phone"
+                        class="w-8 h-8 text-gray-400 group-hover:text-brand-400 mx-auto mb-4 transition-colors"></i>
+                    <h3 class="text-white font-medium">Phone</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-brand-500/80 mt-1">+91 8504929690</p>
+                </a>
+                <a href="https://linkedin.com/in/rvn8504" target="_blank"
+                    class="p-6 rounded-2xl bg-white/5 border border-white/5 hover:bg-brand-500/10 hover:border-brand-500/50 transition-all group">
+                    <i data-lucide="linkedin"
+                        class="w-8 h-8 text-gray-400 group-hover:text-brand-400 mx-auto mb-4 transition-colors"></i>
+                    <h3 class="text-white font-medium">LinkedIn</h3>
+                    <p class="text-sm text-gray-500 group-hover:text-brand-500/80 mt-1">Connect</p>
+                </a>
+            </div>
+
+            <footer class="text-gray-600 text-sm">
+                <p>&copy; 2024 Ravindra Kumar Nayak. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
